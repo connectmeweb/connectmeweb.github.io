@@ -163,13 +163,9 @@ let update = () => {
     message.innerHTML = "Username Required";
     message.style.color = "red";
     userName.focus();
-  } else if (mobilenumber.value === "") {
-    message.innerHTML = "Mobile Number Required";
-    message.style.color = "red";
-    mobilenumber.focus();
   } else {
     var data = {
-      userName: userName.value,
+      userName: Username.value,
       Description: description.value
     };
     console.log(data);
