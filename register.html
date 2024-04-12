@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="/style/register.css" rel="stylesheet" type="text/css" media="all">
+    
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="register-1">
+        <div class="reigster-2">
+          <h2>Sign Up</h2>
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+             <h5>Username: </h5>
+          </div>
+          <input type="text" placeholder="Username" id="username">
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+             <h5>Email Address: </h5>
+          </div>
+          <input type="email" placeholder="Email Address" id="emailaddress">
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+             <h5>Password: </h5>
+          </div>
+          <input type="password" placeholder="Password" id="password">
+        </div>
+        <div class="register-3">
+          <div class="register-title">
+             <h5>Re-Password: </h5>
+          </div>
+          <input type="password" placeholder="Re-Password" id="repass">
+        </div>
+        <p id="message"></p>
+        <div class="register-4">
+          <button id="register" onClick="signup()">Sign Up</button>
+        </div>
+        <div class="register-5">
+          <p>Already made an account?
+            <span id="login" onClick="login()">Login</span>
+          <p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../js/register.js"></script>
+    <script src="../js/firebase.js"></script>
+  </body>
+</html>
