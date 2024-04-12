@@ -1,6 +1,6 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyATmLsbYrOCm_EAsv5XkQ14C8kFx6qqsyw",
+  apiKey: AIzaSyATmLsbYrOCm_EAsv5XkQ14C8kFx6qqsyw,
   authDomain: "smileychat-62e16.firebaseapp.com",
   projectId: "smileychat-62e16",
   storageBucket: "smileychat-62e16.appspot.com",
