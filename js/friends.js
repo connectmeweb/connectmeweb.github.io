@@ -97,7 +97,7 @@ firebase.auth().onAuthStateChanged((user) => {
           window.location.assign("./pages/email.html");
       }
     } else {
-        window.location.assign("./pages/login.html");
+        window.location.assign("./pages/Login.html");
     }
   });
   
