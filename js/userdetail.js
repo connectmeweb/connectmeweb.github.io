@@ -92,11 +92,9 @@ firebase.auth().onAuthStateChanged((user) => {
             if (users.data().uid === user.uid) {
               createpostinput.setAttribute(
                 "placeholder",
-                `What's on your mind ,${users.data().FirstName}?`
+                `What's on your mind ,${users.data().userName}?`
               );
               userName.value = users.data().Username;
-              lastname.value = users.data().LastName;
-              mobilenumber.value = users.data().MobileNumber;
               email.value = users.data().Email;
               email.disabled = true;
               description.value = users.data().Description;
@@ -164,16 +162,14 @@ let update = () => {
   if (userName.value === "") {
     message.innerHTML = "Username Required";
     message.style.color = "red";
-    firstName.focus();
+    userName.focus();
   } else if (mobilenumber.value === "") {
     message.innerHTML = "Mobile Number Required";
     message.style.color = "red";
     mobilenumber.focus();
   } else {
     var data = {
-      firstName: firstName.value,
-      lastName: lastname.value,
-      mobileNumber: mobilenumber.value,
+      userName: userName.value,
       Description: description.value
     };
     console.log(data);
@@ -256,7 +252,7 @@ firebase
                 userdiv.setAttribute("class", "col-6");
                 let = username = document.createElement("h6");
                 userdiv.appendChild(username);
-                username.innerHTML = `${res.data().FirstName} ${
+                username.innerHTML = `${res.data().UserName} ${
                   res.data().LastName
                 }`;
 
@@ -300,7 +296,7 @@ firebase
                   userdiv.setAttribute("class", "col-6");
                   let = username = document.createElement("h6");
                   userdiv.appendChild(username);
-                  username.innerHTML = `${res.data().FirstName} ${
+                  username.innerHTML = `${res.data().userName} ${
                     res.data().LastName
                   }`;
                   let = date = document.createElement("h6");
@@ -535,9 +531,7 @@ firebase
                             currentuserres.data().ProfilePicture
                           );
                         }
-                        commentusername.innerHTML = `${
-                          currentuserres.data().firstName
-                        } ${currentuserres.data().lastName}`;
+                        commentusername.innerHTML = currentuserres.data().userName;
                       });
                     let commentvalue = document.createElement("p");
                     commentmessage.appendChild(commentvalue);
