@@ -11,7 +11,7 @@ var regex = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
 
 const SignUp = () => {
     if (Username.value === "") {
-      message.innerHTML = "First Name Required!";
+      message.innerHTML = "Username Required!";
       message.style.color = "red";
     } else if (Email.value === "") {
       message.innerHTML = "Email Address Required!";
