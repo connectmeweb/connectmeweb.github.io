@@ -1,5 +1,5 @@
 var back = () => {
-    window.location.assign("./login.html");
+    window.location.assign("./Login.html");
   };
   
   let email = document.getElementById("email");
