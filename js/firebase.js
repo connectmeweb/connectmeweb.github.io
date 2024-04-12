@@ -1,12 +1,12 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBoQ5ntVNxXENwRkAVEA-qJf4iRKoE76lk",
-  authDomain: "tutorial-ea726.firebaseapp.com",
-  projectId: "tutorial-ea726",
-  storageBucket: "tutorial-ea726.appspot.com",
-  messagingSenderId: "1048781684417",
-  appId: "1:1048781684417:web:8b78ace85c33ab94b29e40",
-  measurementId: "G-LNF7ZN2T25"
-  };
-
+  apiKey: "AIzaSyATmLsbYrOCm_EAsv5XkQ14C8kFx6qqsyw",
+  authDomain: "smileychat-62e16.firebaseapp.com",
+  projectId: "smileychat-62e16",
+  storageBucket: "smileychat-62e16.appspot.com",
+  messagingSenderId: "197396289724",
+  appId: "1:197396289724:web:e53f63f238a70c397358b9",
+  measurementId: "G-DW9QG98Q6J"
+};
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
