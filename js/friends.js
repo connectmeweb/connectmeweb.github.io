@@ -104,6 +104,6 @@ firebase.auth().onAuthStateChanged((user) => {
 
   const logout = ()=>{
     firebase.auth().signOut().then(() => {
-      window.location.assign("./Login.js")
+      window.location.assign("./login.js")
     })
   }
