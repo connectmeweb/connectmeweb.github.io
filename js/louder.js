@@ -14,7 +14,7 @@ firebase.auth().onAuthStateChanged((user) => {
     } else {
       // login
       setTimeout(() => {
-        window.location.assign("./pages/login.html");
+        window.location.assign("./pages/Login.html");
       }, 1000);
     }
   });
