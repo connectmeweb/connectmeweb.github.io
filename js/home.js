@@ -94,8 +94,7 @@ firebase
             userprodiv.appendChild(userdiv);
             let = username = document.createElement("h6");
             userdiv.appendChild(username);
-            username.innerHTML = `${res.data().FirstName} ${res.data().LastName
-              }`;
+            username.innerHTML = `${res.data().Username}`;
 
             let date = document.createElement("h6");
             userdiv.appendChild(date);
@@ -269,8 +268,8 @@ firebase
                         currentuserres.data().ProfilePicture
                       );
                     }
-                    commentusername.innerHTML = `${currentuserres.data().FirstName
-                      } ${currentuserres.data().LastName}`;
+                    commentusername.innerHTML = `${currentuserres.data().Username
+                      }`;
                   });
                 let commentvalue = document.createElement("p");
                 commentmessage.appendChild(commentvalue);
