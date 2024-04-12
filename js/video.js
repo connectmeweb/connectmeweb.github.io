@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged((user) => {
       window.location.assign("./email.html");
     }
   } else {
-    window.location.assign("./login.html");
+    window.location.assign("./Login.html");
   }
 });
 // get all post
