@@ -1,5 +1,5 @@
 var login = () => {
-    window.location.assign("./login.html");
+    window.location.assign("./Login.html");
 };
 
 const Username = document.getElementById("username");
