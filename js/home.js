@@ -17,7 +17,7 @@ firebase.auth().onAuthStateChanged((user) => {
             if (users.data().uid === user.uid) {
               createpostinput.setAttribute(
                 "placeholder",
-                `What's on your mind,${" " + users.data().FirstName + " " + users.data().LastName
+                `What's on your mind,${" " + users.data().Username
                 }?`
               );
 
