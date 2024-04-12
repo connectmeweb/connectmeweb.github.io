@@ -37,8 +37,7 @@ const SignUp = () => {
     var d = new Date().toLocaleDateString();
     // database
     var userdata = {
-      Username: FirstName.value,
-      MobileNumber: MobileNumber.value,
+      Username: Username.value,
       Email: Email.value,
       Password: Password.value,
       ReEnterPassword: ReEnterPassword.value,
