@@ -2,9 +2,7 @@ let userprofileimg = document.getElementById("userprofileimg");
 let usercoverimg = document.getElementById("usercoverimg");
 let progressbar1 = document.getElementById("progressbar");
 let progressbardiv = document.getElementById("progressbardiv");
-let firstName = document.getElementById("firstname");
-let lastname = document.getElementById("lastname");
-let mobilenumber = document.getElementById("mobileno");
+let userName = document.getElementById("username");
 let email = document.getElementById("emailaddress");
 let description = document.getElementById("userdescription");
 let message = document.getElementById("message");
@@ -96,7 +94,7 @@ firebase.auth().onAuthStateChanged((user) => {
                 "placeholder",
                 `What's on your mind ,${users.data().FirstName}?`
               );
-              firstName.value = users.data().FirstName;
+              userName.value = users.data().Username;
               lastname.value = users.data().LastName;
               mobilenumber.value = users.data().MobileNumber;
               email.value = users.data().Email;
@@ -139,7 +137,7 @@ firebase.auth().onAuthStateChanged((user) => {
       window.location.assign("./email.html");
     }
   } else {
-    window.location.assign("./login.html");
+    window.location.assign("./Login.html");
   }
 });
 postsshowbutton.addEventListener("click", () => {
@@ -163,14 +161,10 @@ showuserprofilebutton.addEventListener("click", () => {
 
 // update button
 let update = () => {
-  if (firstName.value === "") {
-    message.innerHTML = "First Name Required";
+  if (userName.value === "") {
+    message.innerHTML = "Username Required";
     message.style.color = "red";
     firstName.focus();
-  } else if (lastname.value === "") {
-    message.innerHTML = "Last Name Required";
-    message.style.color = "red";
-    lastname.focus();
   } else if (mobilenumber.value === "") {
     message.innerHTML = "Mobile Number Required";
     message.style.color = "red";
