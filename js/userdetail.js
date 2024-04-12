@@ -92,7 +92,7 @@ firebase.auth().onAuthStateChanged((user) => {
             if (users.data().uid === user.uid) {
               createpostinput.setAttribute(
                 "placeholder",
-                `What's on your mind ,${users.data().userName}?`
+                `What's on your mind ,${users.data().Username}?`
               );
               userName.value = users.data().Username;
               email.value = users.data().Email;
