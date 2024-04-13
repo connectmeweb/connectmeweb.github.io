@@ -47,8 +47,9 @@ var login = ()=>{
            Description: "",
            Signupdate: '${d}'
          };
-        Message.innerHTML = "Signed Up Successfully!";
-        Message.style.color = "green";
+         firebase.firestore().collection("users").doc(userCredential.user.uid).set(userData).then((res)=>{
+           
+         })
       })
         .catch((error) => {
         Message.innerHTML = error.message;
