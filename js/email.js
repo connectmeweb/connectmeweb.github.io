@@ -17,7 +17,7 @@ let resend = () => {
       message.innerHTML ="A verification link has been send to your email account";
       message.style.color = "green";
       message.style.marginBottom = "15px";
-    });
+  });
 };
 let reloud = () => {
   location.reload();
