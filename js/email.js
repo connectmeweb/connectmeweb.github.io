@@ -3,7 +3,9 @@ let Message = document.getElementById("message")
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    console.log(user)
+    if (user.emailVerified){
+      window.location.assign("Login.html");
+    }
   } else {
     
   }
