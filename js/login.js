@@ -18,6 +18,18 @@ var signup = ()=>{
         Email: Email.value,
         Password: Password.value
       };
-      console.log(userData);
+      firebase.auth().signInWithEmailAndPassword(userData.Email, userData.Password)
+  .then((userCredential) => {
+    Message.innerHTML = "Sign In Successfully"
+    Message.style.color = "green"
+    if (userCredential.user.emailVerified) {
+        window.location.assign("/pages/home.html")
+    } else {
+        window.location.assign("pages/emailVerification.html")
     }
-  };
+  })
+  .catch((error) => {
+    Message.innerHTML = error.message
+  });
+    }
+  }
