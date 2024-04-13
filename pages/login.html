@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="/style/login.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="main">
+        <div class="login-1">
+            <div class="login-2">
+                <h2>Login</h2>
+            </div>
+            <div class="login-3">
+                <div class="login-3">
+                    <h4>Email Address: </h4>
+               </div>
+               <input 
+                type="email" 
+                placeholder="Email Address" 
+                class="input" 
+                name="email" 
+                id="email">
+            </div>
+            <div class="login-3">
+              <div class="login-3">
+                  <h4>Password: </h4>
+             </div>
+             <input 
+              type="password" 
+              placeholder="Password" 
+              class="input" 
+              name="password" 
+              id="password">
+          </div>
+          <p id="message"></p>
+          <div class="login-4">
+            <button id="login" onClick="login()">Log in</button>
+          </div>
+          <div class="login-5">
+            <h4>Forget password</h4>
+          </div>
+          <div class="login-6">
+            <p>Dont have an account?
+              <span id="signup" onClick="signup()">Sign Up</span>
+            </p>
+          </div>
+        </div>
+    </div>
+    
+    <script src="/js/login.js"></script>
+  </body>
+</html>
