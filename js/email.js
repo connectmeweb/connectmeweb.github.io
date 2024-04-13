@@ -14,7 +14,7 @@ firebase.auth().onAuthStateChanged((user) => {
 });
 
 const reload = ()=>{
-  location.reload()
+  window.location.reload()
 }
 
 const resend = ()=>{
