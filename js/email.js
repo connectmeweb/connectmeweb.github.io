@@ -13,14 +13,14 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 
+const reload = ()=>{
+  location.reload()
+}
+
 const resend = ()=>{
   firebase.auth().sendEmailVerification().then(()={
     Message.innerHTML = "A verification code has been sent to your email address"#
     Message.style.color = "green"
     Message.style.marginBottom = "15px"
   })
-}
-
-const reload = ()=>{
-  location.reload()
 }
