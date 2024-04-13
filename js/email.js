@@ -21,6 +21,6 @@ const resend = ()=>{
   })
 }
 
-let reload = ()=>{
-  window.location.reload()
+const reload = ()=>{
+  location.reload()
 }
