@@ -12,11 +12,11 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: "#f0f3f5";
+  background-color: #f0f3f5;
 }
 
 .verify-1{
-  background-color: "#fff";
+  background-color: #fff;
   border-radius: 10px;
   width: 450px;
   padding: 15px;
@@ -49,7 +49,7 @@ img {
 }
 
 #emailid {
-  color: "#3360f8";
+  color: #3360f8;
   font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ img {
 }
 
 .button {
-  background-coor: "#3360f8";
+  background-coor: #3360f8;
   color: white;
   width: 45%;
   border: none;
