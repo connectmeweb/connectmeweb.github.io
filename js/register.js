@@ -53,7 +53,7 @@ var login = ()=>{
 
            const user = firebase.auth().currentUser;
            user.sendEmailVerification().then((res)=>{
-             
+             window.location.assign("/pages/emailVerification.html")
            })
          })
       })
