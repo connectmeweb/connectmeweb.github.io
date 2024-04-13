@@ -11,7 +11,7 @@ firebase.auth().onAuthStateChanged((user) => {
   } else {
     window.location.assign("/pages/login.html");
   }
-
+  
 const resend = ()=> {
   firebase.auth().currentUser.sendEmailVerification().then()=>{
     message.innerHTML ="A verification link has been send to your email account";
