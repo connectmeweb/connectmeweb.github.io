@@ -13,14 +13,14 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
   
-const resend = ()=> {
-  firebase.auth().currentUser.sendEmailVerification().then(()=>{
-    message.innerHTML ="A verification link has been send to your email account";
-    message.style.color = "green";
-    message.style.marginBottom = "15px";
-  });
-}
+  const resend = ()=> {
+    firebase.auth().currentUser.sendEmailVerification().then(()=>{
+      message.innerHTML ="A verification link has been send to your email account";
+      message.style.color = "green";
+      message.style.marginBottom = "15px";
+    });
+  }
 
-const reload = () => {
-  window.location.reload();
-};
+  const reload = () => {
+    window.location.reload();
+  };
