@@ -45,7 +45,7 @@ var login = ()=>{
            ProfilePicture: "",
            CoverPicture: "",
            Description: "",
-           Signupdate: '${d}'
+           Signupdate: `${d}`
          };
          firebase.firestore().collection("users").doc(userCredential.user.uid).set(userData).then((res)=>{
            Message.innerHTML = "Account was Successfully created!"
