@@ -50,6 +50,11 @@ var login = ()=>{
          firebase.firestore().collection("users").doc(userCredential.user.uid).set(userData).then((res)=>{
            Message.innerHTML = "Account was Successfully created!"
            Message.style.color = "green"
+
+           const user = firebase.auth().currentUser;
+           user.sendEmailVerification().then((res)=>{
+             
+           })
          })
       })
         .catch((error) => {
