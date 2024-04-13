@@ -1,26 +1,24 @@
-let Email = document.getElementById("emailid")
-let Message = document.getElementById("message")
-
+let email = document.getElementById("emailid");
+let message = document.getElementById("message");
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    if (user.emailVerified){
+    console.log(user);
+    if (user.emailVerified) {
       window.location.assign("/pages/home.html");
     } else {
-      Email.innerHTML = user.Email
+      email.innerHTML = user.email;
     }
   } else {
-    window.location.assign("/pages/login.html");
+    window.location.assign("/login.html");
   }
 });
-
-const reload = ()=>{
-  window.location.reload()
-}
-
-const resend = ()=>{
-  firebase.auth().sendEmailVerification().then(()={
-    Message.innerHTML = "A verification code has been sent to your email address"#
-    Message.style.color = "green"
-    Message.style.marginBottom = "15px"
-  })
-}
+let resend = () => {
+  firebase.auth().currentUser.sendEmailVerification().then(() => {
+      message.innerHTML ="A verification link has been send to your email account";
+      message.style.color = "green";
+      message.style.marginBottom = "15px";
+    });
+};
+let reloud = () => {
+  location.reload();
+};
