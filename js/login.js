@@ -25,7 +25,7 @@ var signup = ()=>{
     if (userCredential.user.emailVerified) {
         window.location.assign("/pages/home.html")
     } else {
-        window.location.assign("pages/emailVerification.html")
+        window.location.assign("/pages/emailVerification.html")
     }
   })
   .catch((error) => {
