@@ -34,11 +34,18 @@ var login = ()=>{
     } else {
       firebase.auth().createUserWithEmailAndPassword(Email.value, Password.value)
       .then((userCredential) => {
+          var d = new Date().toLocaleDateString();
+          
           const userData = {
            Username: Username.value,
            Email: Email.value,
            Password: Password.value,
-           ReEnterPassword: ReEnterPassword.value
+           ReEnterPassword: ReEnterPassword.value,
+           uid: userCredential.user.uid,
+           ProfilePicture: "",
+           CoverPicture: "",
+           Description: "",
+           Signupdate: '${d}'
          };
         Message.innerHTML = "Signed Up Successfully!";
         Message.style.color = "green";
