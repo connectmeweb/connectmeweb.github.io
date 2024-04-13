@@ -1,5 +1,5 @@
 var signup = ()=>{
-    window.location.assign("/register.html");
+    window.location.assign("/pages/register.html");
   };
   
   const Email= document.getElementById("email");
