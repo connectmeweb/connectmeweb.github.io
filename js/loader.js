@@ -10,7 +10,7 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
       },1000)
     } else {
       setTimeout(()=>{
-        window.location.assign("/pages/emailVerifiation")
+        window.location.assign("/pages/login.html")
       },1000)
     }
   })
