@@ -76,3 +76,8 @@ textarea {
     width: 15px;
   }
 }
+
+#submitbutton.col-12 {
+  display: flex;
+  justify-content: center;
+}
