@@ -11,6 +11,7 @@ firebase.auth().onAuthStateChanged((user) => {
   } else {
     window.location.assign("/pages/login.html");
   }
+});
   
 const resend = ()=> {
   firebase.auth().currentUser.sendEmailVerification().then(()=>{
@@ -23,4 +24,3 @@ const resend = ()=> {
 const reload = () => {
   window.location.reload();
 };
-});
