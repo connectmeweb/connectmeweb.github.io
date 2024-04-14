@@ -38,3 +38,41 @@ textarea {
 #uploadbuttonicon {
   width: 25px;
 }
+
+#submitbutton {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+#createpostbtn {
+  width: 180px;
+  padding: 5px 0px;
+  border: none;
+  background-color: #3360f9;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: white;
+}
+
+#textarea {
+  font-size: 15px;
+  outline: none;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid rgba(225,2211,221);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:310px) {
+  #imageforpost {
+    font-size: 4vw;
+  }
+  #uploadbuttonicon {
+    width: 15px;
+  }
+}
