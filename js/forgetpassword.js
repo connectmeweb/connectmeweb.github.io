@@ -13,7 +13,7 @@ const reset = () =>{
   }
   firebase.auth().sendPasswordResetEmail(email.value)
   .then(() => {
-    window.location.assign("/pages/emailVerification.html")
+    alert("The reset link has been sent to your email address")
   })
   .catch((error) => {
     Message.innerHTML = error.message;
