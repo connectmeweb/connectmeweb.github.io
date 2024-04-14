@@ -8,11 +8,11 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
       setTimeout(()=>{
         window.location.assign("/pages/emailVerifiation.html")
       },1000)
-    } else {
-      setTimeout(()=>{
-        window.location.assign("/pages/login.html")
-      },1000)
-    }
+  } else {
+    setTimeout(()=>{
+      window.location.assign("/pages/login.html")
+    },1000)
+   }
   })
   .catch((error) => {
     var errorCode = error.code;
