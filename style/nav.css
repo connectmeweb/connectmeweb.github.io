@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-.main div{
+.maindiv > div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@ body {
   flex-direction: row;
 }
 
-.mav li {
+.nav > li {
   display: flex;
   justify-content: center;
 }
