@@ -39,6 +39,7 @@ textarea {
 #submitbutton {
   display: flex;
   justify-content: flex-end;
+  width: 40%;
 }
 
 #createpostbtn {
