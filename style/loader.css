@@ -23,7 +23,7 @@ body {
 .img {
     height: 200px;
     -webkit-animation-name: rotate; 
-    -webkit-animation-duration: 0.5s; 
+    -webkit-animation-duration: 1.5s; 
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
   }
