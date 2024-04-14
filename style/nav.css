@@ -23,3 +23,32 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.mav li {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  padding: 9px 26px;
+  color: black;
+  border-radius: 5px;
+}
+
+.icons:hover {
+  color: #d4d4d4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
