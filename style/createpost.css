@@ -1,1 +1,37 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 
+textarea {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.createmain {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.createposttitle {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#imageforpost {
+  width: 100%;
+  text-align: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 12px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  color: gray;
+}
+
+#uploadbuttonicon {
+  width: 25px;
+}
