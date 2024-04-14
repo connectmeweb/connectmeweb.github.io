@@ -33,3 +33,7 @@ var signup = ()=>{
   });
     }
   }
+
+const ForgetPassword = ()=>{
+  window.location.assign("/pages/forgetPassword.html")
+}
