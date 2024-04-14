@@ -1,16 +1,21 @@
-firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    if(user.emailVerified) {
-      setTimeout(()=>{
-        window.location.assign("/pages/home.html")
-      },1000)
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      if (user.emailVerified) {
+        // home
+        setTimeout(() => {
+          window.location.assign("/pages/home.html");
+        }, 1000);
+      } else {
+        // email verification
+        setTimeout(() => {
+          window.location.assign("/pages/email.html");
+        }, 1000);
+      }
     } else {
-      setTimeout(()=>{
-        window.location.assign("/pages/emailVerifiation.html")
-      },1000)
-  } else {
-    setTimeout(()=>{
-      window.location.assign("/pages/login.html")
-    },1000)
-  }
-})
+      // login
+      setTimeout(() => {
+        window.location.assign("/pages/login.html");
+      }, 1000);
+    }
+  });
+  
