@@ -54,3 +54,22 @@ textarea {
   border-radius: 5px;
   color: white;
 }
+
+#textarea {
+  font-size: 15px;
+  outline: none;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid rgba(225, 221, 221);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:310px) {
+  #imageforpost {
+    font-size: 4vw;
+  }
+  #uploadbuttonicon {
+    width: 15px;
+  }
+}
