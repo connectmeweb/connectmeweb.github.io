@@ -33,5 +33,26 @@ firebase.auth().onAuthStateChanged((user) => {
 })
 
 let uploading = (event) =>{
+  fileType = event.target.files[0].fileType
+  var uploadTask = firebase.storage().ref().child(`posts/${event.target.file[0]}`)
   
+uploadTask.on('state_changed', 
+  (snapshot) => {
+    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+    var uploadpercentage = Math.round(progress)
+    progressdiv.style.display = "block"
+    progressbar.style.width = `${uploadpercentage}%`
+    progressbar.innerHTML = `${uploadpercentage}%`
+  }, 
+  (error) => {
+    // Handle unsuccessful uploads
+  }, 
+  () => {
+    uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+      url = downloadURL;
+      done.style.display="block"
+      progressdiv.style.display = "none"
+    });
+  }
+);
 }
