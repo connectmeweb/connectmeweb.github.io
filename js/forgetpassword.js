@@ -11,7 +11,7 @@ const reset = () =>{
     Message.style.color = "red"
     email.focus()
   }
-  firebase.auth().sendPasswordResetEmail(email)
+  firebase.auth().sendPasswordResetEmail(email.value)
   .then(() => {
     window.location.assign("/pages/emailVerification.html")
   })
